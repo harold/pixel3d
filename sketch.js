@@ -1,4 +1,4 @@
-let colors = ["#d1cb95","#40985e","#1a644e","#1a644e"]
+let colors = ["#d1cb95","#40985e","#1a644e","#04373b"]
 let ballColors = ["#f00","#0f0","#00f","#ff0","#f0f","#0ff"]
 let randomBallColor = () => ballColors[Math.random()*6|0]
 let lastBallColorTime = 0
