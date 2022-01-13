@@ -19,6 +19,10 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight)
 }
 
+if (window.DeviceOrientationEvent) {
+  window.addEventListener('orientationchange', function() { windowResized() }, false)
+}
+
 function draw() {
   let secs = millis()/1000
   let theta = TWO_PI*secs/32
